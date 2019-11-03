@@ -28,17 +28,16 @@ body {
 
 nav {
   margin: 0 auto;
-  background-color: #140F38;
+  background-color: #232342;
   width: 100%;
 }
 
-.arrow-left {
-  position: top;
+.arrow-down {
   font-size: .5em;
   padding: 15px;
 }
 
-.arrow-left h1 {
+.arrow-down h1 {
   font-size: 18px;
   font-weight: bold;
   display: inline-block;
