@@ -27,9 +27,14 @@ body {
 }
 
 nav {
+  background-image: url('../images/Status-Bar.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
   margin: 0 auto;
   background-color: #232342;
   width: 100%;
+  height: 12%;
 }
 
 .arrow-down {
