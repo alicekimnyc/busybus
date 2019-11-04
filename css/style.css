@@ -3,30 +3,20 @@
 }
 
 body {
-  font-size: 13px;
+  font-size: 11px;
   color: #ffffff;
   line-height: 1.5;
   background-color: #333;
   font-family: sans-serif;
 }
 
-.bus-schedule {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
+.container {
+  width: 375px;
+  height: 812px;
+  margin: auto;
 }
 
-.route {
-  display: inline-block;
-  border-bottom: 1px solid #232342;
-  width: 100%;
-  background-color: #140F38;
-}
-
-.route:hover {
-  background-color: #232342;
-}
-
+/*nav bar related below*/
 nav {
   background-image: url('../images/Status-Bar.png');
   background-size: 100%;
@@ -50,108 +40,109 @@ nav {
   margin-left: 10px;
 }
 
-.container {
-  width: 414px;
-  height: 896px;
+/*----------bus schedule list related below---------*/
+.bus-schedule {
+  background-color: #140F38;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   background-image: url('../images/Bottom-Bar.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
-  margin: auto;
 }
 
-.content {
-  display: inline-block;
-  width: 75%;
-  padding: 15px 0 15px 15px;
+.route {
+  border-bottom: 1px solid #232342;
+}
+
+.route:hover {
+  background-color: #232342;
 }
 
 .route h1 {
-  font-size: 1.2em;
+  font-size: 2em;
   font-weight: bold;
+  line-height: 1;
+}
+.route h2 {
+  font-size: 1.5em;
 }
 
-.content b60 {
+.bus {
+  display: inline-block;
+  padding: 10px;
+  width: 60%;
+}
+
+.arrival {
+  display: inline-block;
+  padding: 10px;
+  text-align: right;
+  float: right;
+}
+
+/* --------bus colors---------*/
+.route b60 {
   border-radius: 8px;
   background: #BF3FBF;
   padding: 2px 5px 2px 5px;
 }
 
-.content b124 {
+.route b124 {
   border-radius: 8px;
   background: #8212F1;
   padding: 2px 5px 2px 5px;
 }
 
-.content b151 {
+.route b151 {
   border-radius: 8px;
   background: #d79abc;
   padding: 2px 5px 2px 5px;
 }
 
-.content bJ14 {
+.route bJ14 {
   border-radius: 8px;
   background: #F11282;
   padding: 2px 5px 2px 5px;
 }
 
-.content b6x {
+.route b6x {
   border-radius: 8px;
   background: #1282F1;
   padding: 2px 5px 2px 5px;
 }
 
-.content b4 {
+.route b4 {
   border-radius: 8px;
   background: #f9b282;
   padding: 2px 5px 2px 5px;
 }
 
-.content b20 {
+.route b20 {
   border-radius: 8px;
   background: #9fdfcd;
   padding: 2px 5px 2px 5px;
 }
 
-.content b157 {
+.route b157 {
   border-radius: 8px;
   background: #1282F1;
   padding: 2px 5px 2px 5px;
 }
 
-.content oos {
+/*---------out of service buses----------*/
+.bus i {
   color: #828282;
   font-weight: lighter;
+  font-style: italic;
 }
 
-.ETA {
+.notice {
   display: inline-block;
-  text-align: center;
-}
-
-.ETA h1 {
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.ETA h3 {
-  font-size: .8em;
-}
-
-.noETA {
-  display: inline;
-  position: relative;
-  bottom: 5px;
-  left: 35px;
-  font-size: 2em;
-  color: #F18212;
-}
-
-.arrow {
   float: right;
   position: relative;
-  top: 15px;
-  font-size: 9px;
-  padding: 15px 10px 15px 15px;
+  padding: 15px 10px 10px 10px;
+  font-size: 2em;
+  color: #F18212;
 }
